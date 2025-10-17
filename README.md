@@ -71,11 +71,11 @@ Database Design
   
    E. Reviews
     a. Fields:
-      i. id – Unique identifier for each review.
-      ii. user_id – References the reviewer.
-      iii. property_id – References the reviewed property.
-      iv.	rating – Numeric rating (e.g., 1–5).
-      v. comment – Textual feedback from the user.
+      • id – Unique identifier for each review.
+      •. user_id – References the reviewer.
+      •. property_id – References the reviewed property.
+      •.	rating – Numeric rating (e.g., 1–5).
+      •. comment – Textual feedback from the user.
     b. Relationships:
       •	A Review belongs to one User and one Property.
       •	A Property can have multiple Reviews.
