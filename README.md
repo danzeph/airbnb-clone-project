@@ -128,7 +128,10 @@ API Security
        •  Importance: Protects financial data and maintains user trust during payment processing.
 
 
+
+
 CI/CD Pipeline
+
   Continuous Integration and Continuous Deployment(CI/CD) pipelines automate the process of building, testing, and deploying code.
 CI/CD pipelines are important for this project because:
   1. It helps detect and fix errors early through automated testing.
