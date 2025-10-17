@@ -126,6 +126,22 @@ API Security
   7.	Secure Payment Handling
        •	Ensures payment transactions are processed through trusted gateways with encrypted connections.
        •  Importance: Protects financial data and maintains user trust during payment processing.
+
+
+CI/CD Pipeline
+  Continuous Integration and Continuous Deployment(CI/CD) pipelines automate the process of building, testing, and deploying code.
+CI/CD pipelines are important for this project because:
+  1. It helps detect and fix errors early through automated testing.
+  2. It Speeds up delivery by deploying new updates automatically.
+  3. It maintains high code quality and consistend perfomance across environments.
+  
+Tools That Can Be Used:
+  1. GitHub Actions
+  2. Docker
+  3. Azure DevOps Server
+  4. Jenkins
+  5. AWS CodePipeline
+ 
   
   
     
