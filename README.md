@@ -29,3 +29,88 @@ Team Roles
   2. Database Administrator - Design, Manages and optimizes the database for perfomance and           reliability. 
   3. DevOps Engineer - Responsible for handling project deployment, monitoring, and scaling of        the backend services
   4. QA Engineer - Sees to it that the backend functionalites are well tested and meet quality        standards.
+
+
+Database Design
+  Key Entities
+  A. Users
+    a. Fields:
+      •	id – Unique identifier for each user.
+      •	username – The user’s chosen display name.
+      •	email – Used for login and communication.
+      •	password – Encrypted password for authentication.
+      •	is_host – Boolean indicating whether the user can list properties.
+    b. Relationships:
+      •	A User can list multiple Properties.
+      •	A User can make multiple Bookings.
+      •	A User can leave multiple Reviews.
+  
+  B. Properties
+    a. Fields:
+      •	id – Unique identifier for each property.
+      •	host_id – References the user who owns the property.
+      •	title – Name or short description of the property.
+      •	location – Address or city where the property is located.
+      •	price_per_night – Cost of renting the property per night.
+    b. Relationships:
+      •	A Property belongs to one User (the host).
+      •	A Property can have multiple Bookings.
+      •	A Property can receive multiple Reviews.
+    
+  C. Bookings
+    a. Fields:
+      •	id – Unique identifier for each booking.
+      •	user_id – References the user who made the booking.
+      •	property_id – References the property being booked.
+      •	check_in – Date the booking starts.
+      •	check_out – Date the booking ends.
+      •	status – Indicates booking status (e.g., confirmed, canceled).
+    b. Relationships:
+      •	A Booking belongs to one User and one Property.
+      •	A Booking can have one Payment.
+
+  D. Payments
+  Tracks payments made for property bookings.
+    a. Fields
+      •	id – Unique identifier for each payment.
+      •	booking_id – References the associated booking.
+      •	amount – Total amount paid.
+      •	payment_method – Type of payment (e.g., credit card, PayPal).
+      •	status – Indicates whether the payment was successful or pending.
+    b. Relationships:
+          •	A Payment belongs to one Booking.
+      •	A Booking can have one Payment.
+  
+   E. Reviews
+    a. Fields:
+      •	id – Unique identifier for each review.
+      •	user_id – References the reviewer.
+      •	property_id – References the reviewed property.
+      •	rating – Numeric rating (e.g., 1–5).
+      •	comment – Textual feedback from the user.
+    b. Relationships:
+      •	A Review belongs to one User and one Property.
+      •	A Property can have multiple Reviews.
+  
+Feature Breakdown
+  1. User Management
+     Handles user registration, authentication, and profile management for guests and hosts. It ensures secure access and role-based functionality across the platform.
+  2. Property Management
+     Allows hosts to create, update, and delete property listings. This feature maintains accurate details such as descriptions, prices, and locations for easy discovery by users.
+   
+  3. Booking System
+     Enables users to reserve properties based on availability. It manages booking dates, check-in/check-out details, and prevents overlapping reservations.
+   
+  4. Payment Processing
+     Supports secure transactions between guests and hosts. It verifies payments, records transaction data, and ensures financial reliability in the booking process.
+
+  5. Review System
+     Lets users share feedback and rate properties after their stay. This builds trust, helps hosts improve, and enhances user experience.
+
+  6. Data Optimization
+    Enhances performance through caching, indexing, and optimized database queries. It ensures faster response times and efficient data management.
+
+
+  
+  
+    
