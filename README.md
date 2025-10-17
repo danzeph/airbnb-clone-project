@@ -3,6 +3,7 @@ Overview
 
   The Airbnb Clone Project is a full-stack web application built using Django, Django REST Framework, PostgreSQL, GraphQL, Celery, Redis, Docker, and CI/CD Pipelines. It replicates core core Airbnb features and focuses on backend development, database design, API creation, and security.
 
+
 Technology Stack
   1. Django	- Web framework for building applications in Python
   2. Django REST Framework - Provides tools for creating and managing RESTful APIs.
@@ -23,7 +24,6 @@ Team Roles
 Database Design
 
   Key Entities
-  
   A. Users
     a. Fields:
       •	id – Unique identifier for each user.
@@ -81,6 +81,7 @@ Database Design
       b. Relationships:
       •	A Review belongs to one User and one Property.
       •	A Property can have multiple Reviews.
+
   
 Feature Breakdown
   1. User Management
