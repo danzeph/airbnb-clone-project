@@ -61,24 +61,24 @@ Database Design
       •	A Booking can have one Payment.
 
   D. Payments
-    a. Fields
+      a. Fields
       •	id – Unique identifier for each payment.
       •	booking_id – References the associated booking.
       •	amount – Total amount paid.
       •	payment_method – Type of payment (e.g., credit card, PayPal).
       •	status – Indicates whether the payment was successful or pending.
-    b. Relationships:
+      b. Relationships:
           •	A Payment belongs to one Booking.
       •	A Booking can have one Payment.
   
    E. Reviews
-    a. Fields:
+      a. Fields:
       • id – Unique identifier for each review.
       •. user_id – References the reviewer.
       •. property_id – References the reviewed property.
       •.	rating – Numeric rating (e.g., 1–5).
       •. comment – Textual feedback from the user.
-    b. Relationships:
+      b. Relationships:
       •	A Review belongs to one User and one Property.
       •	A Property can have multiple Reviews.
   
