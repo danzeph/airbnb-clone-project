@@ -24,3 +24,8 @@ Technology Stack
   7. Docker	- Runs apps in isolated containers
   8. CI/CD Pipelines	- Automate testing and deployment
 
+Team Roles
+  1. Backend Developer - Builds and maintains server-side logic, APIs, and integrations.
+  2. Database Administrator - Design, Manages and optimizes the database for perfomance and           reliability. 
+  3. DevOps Engineer - Responsible for handling project deployment, monitoring, and scaling of        the backend services
+  4. QA Engineer - Sees to it that the backend functionalites are well tested and meet quality        standards.
