@@ -21,7 +21,9 @@ Team Roles
 
 
 Database Design
+
   Key Entities
+  
   A. Users
     a. Fields:
       •	id – Unique identifier for each user.
