@@ -1,7 +1,7 @@
 # airbnb-clone-project
 Overview
 
-  The Airbnb Clone Project is a full-stack web application built using Django, Django REST Framework, PostgreSQL, GraphQL, Celery, Redis, Docker, and CI/CD Pipelines. It focuses on replicating core Airbnb features such as backend development, database design, API creation, and security.
+  The Airbnb Clone Project is a full-stack web application built using Django, Django REST Framework, PostgreSQL, GraphQL, Celery, Redis, Docker, and CI/CD Pipelines. It replicates core core Airbnb features and focuses on backend development, database design, API creation, and security.
 
 Technology Stack
   1. Django	- Web framework for building applications in Python
@@ -15,9 +15,9 @@ Technology Stack
 
 Team Roles
   1. Backend Developer - Builds and maintains server-side logic, APIs, and integrations.
-  2. Database Administrator - Design, Manages and optimizes the database for perfomance and           reliability. 
-  3. DevOps Engineer - Responsible for handling project deployment, monitoring, and scaling of        the backend services
-  4. QA Engineer - Sees to it that the backend functionalites are well tested and meet quality        standards.
+  2. Database Administrator - Design, manages and optimizes the database for perfomance and           reliability. 
+  3. DevOps Engineer - Responsible for handling the project's deployment, monitoring, and scaling of backend services.
+  4. QA Engineer -  Ensures that backend functionalities are thoroughly tested and meet quality standards.
 
 
 Database Design
@@ -59,7 +59,6 @@ Database Design
       •	A Booking can have one Payment.
 
   D. Payments
-  Tracks payments made for property bookings.
     a. Fields
       •	id – Unique identifier for each payment.
       •	booking_id – References the associated booking.
