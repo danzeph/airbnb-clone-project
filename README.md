@@ -71,11 +71,11 @@ Database Design
   
    E. Reviews
     a. Fields:
-      •	id – Unique identifier for each review.
-      •	user_id – References the reviewer.
-      •	property_id – References the reviewed property.
-      •	rating – Numeric rating (e.g., 1–5).
-      •	comment – Textual feedback from the user.
+      i. id – Unique identifier for each review.
+      ii. user_id – References the reviewer.
+      iii. property_id – References the reviewed property.
+      iv.	rating – Numeric rating (e.g., 1–5).
+      v. comment – Textual feedback from the user.
     b. Relationships:
       •	A Review belongs to one User and one Property.
       •	A Property can have multiple Reviews.
@@ -100,6 +100,26 @@ Feature Breakdown
     Enhances performance through caching, indexing, and optimized database queries. It ensures faster response times and efficient data management.
 
 
+**Key Security Measures**
+  1.	Authentication
+    o	Uses secure methods (e.g., JWT or OAuth2) to verify user identity before granting access to APIs.
+    o	Importance: Prevents unauthorized users from accessing sensitive features such as bookings, payments, or user profiles.
+  2.	Authorization
+    o	Controls what authenticated users can do (e.g., hosts can add properties, guests can make bookings).
+    o	Importance: Ensures that users can only perform actions they are permitted to, protecting both user and system integrity.
+  3.	Rate Limiting
+    o	Restricts the number of API requests a user or client can make in a given time frame.
+    o	Importance: Prevents abuse, such as denial-of-service (DoS) attacks, and ensures fair resource usage.
+  4.	Data Encryption
+    o	Uses HTTPS (SSL/TLS) and database encryption to protect sensitive data during transmission and storage.
+    o	Importance: Keeps user credentials, payment details, and personal information safe from interception.
+  5.	Input Validation & Sanitization
+    o	Validates incoming data and removes malicious inputs before processing.
+    o	Importance: Protects the system from common web vulnerabilities such as SQL injection and cross-site scripting (XSS).
+  6.	Secure Payment Handling
+    o	Ensures payment transactions are processed through trusted gateways with encrypted connections.
+    o	Importance: Protects financial data and maintains user trust during payment processing.
   
   
     
+      
