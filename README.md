@@ -105,20 +105,24 @@ Feature Breakdown
 API Security
   1.	Authentication
     •  Uses secure methods (e.g., JWT or OAuth2) to verify user identity before granting access to APIs.
-    •  mportance: Prevents unauthorized users from accessing sensitive features such as bookings, payments, or user profiles.
+    •  Importance: Prevents unauthorized users from accessing sensitive features such as bookings, payments, or user profiles.
+    
   3.	Authorization
       •  Controls what authenticated users can do (e.g., hosts can add properties, guests can make bookings).
     	•  Importance: Ensures that users can only perform actions they are permitted to, protecting both user and system integrity.
+      
   4.	Rate Limiting
       •  Restricts the number of API requests a user or client can make in a given time frame.
       •  Importance: Prevents abuse, such as denial-of-service (DoS) attacks, and ensures fair resource usage.
   5.	Data Encryption
       •  Uses HTTPS (SSL/TLS) and database encryption to protect sensitive data during transmission and storage.
     	•  Importance: Keeps user credentials, payment details, and personal information safe from interception.
-  7.	Input Validation & Sanitization
+      
+  6.	Input Validation & Sanitization
       •  Validates incoming data and removes malicious inputs before processing.
       •  Importance: Protects the system from common web vulnerabilities such as SQL injection and cross-site scripting (XSS).
-  8.	Secure Payment Handling
+      
+  7.	Secure Payment Handling
        •	Ensures payment transactions are processed through trusted gateways with encrypted connections.
        •  Importance: Protects financial data and maintains user trust during payment processing.
   
