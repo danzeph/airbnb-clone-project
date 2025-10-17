@@ -15,7 +15,7 @@ Technology Stack
 
 Team Roles
   1. Backend Developer - Builds and maintains server-side logic, APIs, and integrations.
-  2. Database Administrator - Design, manages and optimizes the database for perfomance and           reliability. 
+  2. Database Administrator - Design, manages and optimizes the database for performance and           reliability. 
   3. DevOps Engineer - Responsible for handling the project's deployment, monitoring, and scaling of backend services.
   4. QA Engineer -  Ensures that backend functionalities are thoroughly tested and meet quality standards.
 
