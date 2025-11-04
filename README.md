@@ -69,7 +69,7 @@ Database Design
       •	status – Indicates whether the payment was successful or pending.
       b. Relationships:
           •	A Payment belongs to one Booking.
-      •	A Booking can have one Payment.
+          •	A Booking can have one Payment.
   
    E. Reviews
       a. Fields:
